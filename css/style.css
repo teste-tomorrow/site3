@@ -1,0 +1,128 @@
+/* =================================
+   Reset e Estilo Global
+   ================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    color: #f0f0f0;
+    /* Fundo gradiente escuro e impactante */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background-attachment: fixed;
+}
+
+/* Container principal para o conteúdo */
+.container {
+    width: 90vw;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 1rem; /* Espaço interno controlado, 3rem no topo/baixo */
+    text-align: center;
+}
+
+/* =================================
+   Cabeçalho
+   ================================= */
+header {
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #00f6ff; /* Cor neon de destaque */
+    text-shadow: 0 0 10px rgba(0, 246, 255, 0.5);
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #c0c0c0;
+    margin-top: 0.5rem;
+}
+
+/* =================================
+   Campos de Input
+   ================================= */
+.inputs {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+input[type="number"] {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.5rem;
+    font-weight: 700;
+    width: 250px;
+    padding: 0.5rem;
+    text-align: center;
+    transition: border-color 0.3s;
+    -moz-appearance: textfield; /* Esconde setas no Firefox */
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Esconde setas em outros navegadores */
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-bottom-color: #00f6ff; /* Borda acende com a cor de destaque */
+}
+
+/* =================================
+   Botões
+   ================================= */
+.botoes-container {
+    display: flex;
+    flex-wrap: wrap; /* Garante que os botões quebrem a linha */
+    justify-content: center;
+    gap: 15px; /* Espaço consistente entre os botões */
+}
+
+.operacao {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 246, 255, 0.3);
+    color: #f0f0f0;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.operacao:hover {
+    background: #00f6ff;
+    color: #0f2027;
+    border-color: #00f6ff;
+    transform: scale(1.05); /* Efeito de zoom */
+    box-shadow: 0 0 20px rgba(0, 246, 255, 0.5); /* Efeito de brilho */
+}
+
+/* =================================
+   Área de Resultado
+   ================================= */
+.resultado-container {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 246, 255, 0.2);
+    border-radius: 8px;
+}
+
+#resultado {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
